@@ -1,7 +1,7 @@
 define(['ang/app'], function (app) {
-    app.register.directive('<%= featureNameDashed %>', [function(){
+    app.register.directive('<%= featureName %>', [function(){
     	return function($scope, $el, attrs) {
-	      elm.text('DRIECTIVE INJECTED TEXT <%= featureName %>Dir.js');
+	      $el.text('DRIECTIVE INJECTED TEXT <%= featureName %>Dir.js');
 	    };
     }]);
 });

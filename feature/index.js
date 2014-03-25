@@ -31,7 +31,7 @@ var FeatureGenerator = yeoman.generators.Base.extend({
       this.someOption = props.someOption;
       this.featureName = props.featureName;
       var dash = function(string){
-        return string + '-';
+        return string.replace(/([a-z])([A-Z])/g, '$1-$2').toLowerCase();
       };
       this.featureNameDashed = dash(props.featureName);
 
